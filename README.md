@@ -88,18 +88,19 @@ Now that you have Composer installed, you can proceed to set up the VoteHub Lara
     <pre><code>php artisan migrate</code></pre>
     <li>Run the following command to seed the database with sample data:</li>
     <pre><code>php artisan db:seed</code></pre>
-    <li>Run the following command to to create account for an admin:</li>
-    <pre>
-        <code>
-        \App\Models\Admin::factory()->create([
-            'name' => 'ADMIN_NAME',
-            'email' => 'ADMIN_EMAIL',
-            'password' => Hash::make('ADMIN_PASSWORD'),
-        ]);
-        </code>
-    </pre>
-    <li>Run the following command to start the Laravel development server:</li>
-    <pre><code>php artisan serve</code></pre>
-    
-    <li>Open your web browser and access the application at <code>http://localhost:8000</code>.</li>
+    <li>Run the following command to create an admin account:</li>
+<pre>
+    <code>
+    \App\Models\Admin::factory()->create([
+        'name' => 'ADMIN_NAME',
+        'email' => 'ADMIN_EMAIL',
+        'password' => Hash::make('ADMIN_PASSWORD'),
+    ]);
+    </code>
+</pre>
+<li>Run the following command to start the Laravel development server:</li>
+<pre><code>php artisan serve</code></pre>
+
+<li>Open your web browser and access the application at <code>http://localhost:8000</code>.</li>
+
 </ol>
